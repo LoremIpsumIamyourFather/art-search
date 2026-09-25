@@ -1,0 +1,47 @@
+<!DOCTYPE html> <!-- HTML5 Document Type Declaration -->
+<html lang="en"> <!-- Root element with language attribute -->
+
+<head> <!-- Head section containing meta information and links to resources -->
+    <meta charset="UTF-8"><!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper scaling on different devices -->
+    <title> Aimee's Art Search</title> <!-- Title of the document displayed in the browser tab -->
+    <!-- Google Fonts and CSS links -->
+    <!-- Preconnect to Google Fonts and include the Fraunces font family, followed by the main stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Preconnect to Google Fonts for improved loading performance -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preconnect to Google Fonts static content for improved loading performance -->
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Include the Fraunces font family from Google Fonts -->
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+    <header>
+        <h1> Aimee's Art Search</h1> <!-- Site title -->
+        <nav><!-- Navigation menu for the website -->
+            <ul> <!--list of navigation menu items-->   `
+                <li><a href="#">Search</a></li><!--place holder for search page-->
+                <li><a href="#">Artists</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li><!-- End of navigation menu items -->
+            </ul>
+        </nav>
+    </header><!--semantic element for the top section of the webpage-->
+      <main> <!-- Main content area of the webpage -->
+        <form id="search-form"><!--the form. the id lets JavaScript find it later-->
+            <input type="search" id="search-input" placeholder="Search for artworks..." required> <!-- Search input field with a placeholder and required attribute.Required attribute blocks empty -->
+            <button type="submit">Search</button> <!-- search button--> <!-- Triggers the form submission -->
+        </form> <!-- End of search form -->
+        <div id="results"></div> <!-- Container for displaying search results --><!--This is where JavaScript will inject the image grid.When the user searches, JS will fill it-->
+     </main> <!-- End of main content area -->
+     <script src="js/main.js"></script> <!-- link to the main JavaScript file -->
+     <!--script goes before /body tag so the HTML content loads before the JavaScript executes--><!--src attribute points to the JS file created earlier-->
+     
+</body>
+  
+
+</html>
