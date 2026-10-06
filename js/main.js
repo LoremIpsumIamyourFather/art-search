@@ -1,10 +1,10 @@
 async function searchArtworks(query) {//query is a permameter. The search term to lool for artworks that comes from the user.
     //1. build and fetch data
-     const url = `https://api.artic.edu/api/v1/artworks/search?q=${query}&limit=20&fields=id,title,image_id`;//backticks so you can inject ${query} into the string.
+    const url = `https://api.artic.edu/api/v1/artworks/search?q=${query}&limit=20&fields=id,title,image_id`;//backticks so you can inject ${query} into the string.
 
     const response = await fetch(url);//sends the HTTP request, waits for the response, returns a response object/
     const data = await response.json();//parses the response body as JSON, returns a JS object//
-  
+
     //2. find the results container and clear it. 
     const resultsContainer = document.getElementById('results');
     resultsContainer.innerHTML = '';
@@ -14,12 +14,11 @@ async function searchArtworks(query) {//query is a permameter. The search term t
         if (!artwork.image_id) return;
 
         const img = document.createElement('img');
-     
+        img.referrerPolicy = 'no-referrer';   // ← add this line
         img.src = `https://www.artic.edu/iiif/2/${artwork.image_id}/full/400,/0/default.jpg`;
         img.alt = artwork.title;
         img.classList.add('artwork');
         resultsContainer.appendChild(img);
-
 
     });
 
@@ -32,5 +31,5 @@ form.addEventListener('submit', (event) => { //EVENT LISTENER FOR FORM SUBMISSIO
     event.preventDefault(); // Prevent the default form submission behavior
     const query = input.value;
     searchArtworks(query);
-  
+
 });
