@@ -43,6 +43,12 @@ Aimee's Art Search is a single-page web application that lets users search the A
 4. **Add a favorites feature.** Let users save artworks to a personal collection using localStorage, so their picks persist between visits.
 5. **Add filtering.** Allow users to filter results by medium, department, or date range to narrow down large result sets.
 
+## Planning
+
+- [User Stories](planning/user-stories.md)
+- [Desktop Wireframe](planning/wireframe-desktop.drawio.png)
+- [Mobile Wireframe](planning/wireframe-mobile.drawio.png)
+
 ## Credits
 
 Artwork data and images provided by the Art Institute of Chicago's public API.

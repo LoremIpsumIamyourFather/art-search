@@ -143,7 +143,7 @@ button:hover {
     }
 
     nav ul {
-        flex-direction: column; /*reverses the flex layout. instead if children sitting side-by-side (default row), they stack vertically.  This is how the mobile requirements work:
+        flex-direction: column; /*reverses the flex layout. instead of children sitting side-by-side (default row), they stack vertically.  This is how the mobile requirements work:
     1. Header: title above nav
     2. Nav: links stacked
     3. Forn: input above button
@@ -155,9 +155,12 @@ button:hover {
         flex-direction: column;
     }
 
-    #results .artwork {
-        width: 100%;
-    }
+   #results .artwork {
+    width: calc(25% - 0.75rem);
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+}
 
     /*REQUIREMENTS THAT ARE MET
     1. header {....} req 11 (title and nav stack)
