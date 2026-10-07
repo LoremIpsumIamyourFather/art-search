@@ -162,6 +162,13 @@ button:hover {
     border-radius: 4px;
 }
 
+    footer { /*adds footer w/ API attrubution*/ 
+    text-align: left;
+    padding: 2rem;
+    font-size: 0.85rem;
+    color: #8a8a8a;
+}
+
     /*REQUIREMENTS THAT ARE MET
     1. header {....} req 11 (title and nav stack)
     2. nav ul {....} req 12 (nav items stacl)
