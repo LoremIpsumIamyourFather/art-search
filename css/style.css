@@ -1,49 +1,84 @@
-body{/* {...} the declaration block*//* { opens declaration*/
+body {
+    /* {...} the declaration block*/
+    /* { opens declaration*/
     /*body SELECTOR. Applies the rule to the entire body of the document. */
-    font-family: 'Lato', sans-serif; /* font family is a declaration. font-family is the property. Lato and sans-serif are two values */
-    background-color: #fafafa; /*background-color #fafafa is a declaration. background-color is a property. #fafafa is a value */
-    color: #1a1a1a; /*  color: #1a1a1a* is a declaration. Color is a property and #1a1a1a is a value*/
-    margin: 0; /* margin: 0; is a declaration. Margin is a property and 0 is a value. */
-    padding:0;  /*padding:0; is a declaration. Padding is a property. 0 is a value*/
-    line-height: 1.6; /*  line-height: 1.6; is a declaration. Line-height is a property and 1.6 is a value. */
+    font-family: 'Lato', sans-serif;
+    /* font family is a declaration. font-family is the property. Lato and sans-serif are two values */
+    background-color: #fafafa;
+    /*background-color #fafafa is a declaration. background-color is a property. #fafafa is a value */
+    color: #1a1a1a;
+    /*  color: #1a1a1a* is a declaration. Color is a property and #1a1a1a is a value*/
+    margin: 0;
+    /* margin: 0; is a declaration. Margin is a property and 0 is a value. */
+    padding: 0;
+    /*padding:0; is a declaration. Padding is a property. 0 is a value*/
+    line-height: 1.6;
+    /*  line-height: 1.6; is a declaration. Line-height is a property and 1.6 is a value. */
 }
 
-header {  /*element selector. Targets the <header> element*/
-    display: flex; /*declaration:: property */
-    justify-content: space-between; /* property: justify-content. Value: space-between.*/
-    align-items: center;/* property: align-items. Value: center*/
-    padding: 1.5rem 2rem; /*property:padding. Values: 1.5rem 2rem;*/
-    border-bottom: 1px solid #e0e0e0;/* property:padding. Value: 1.5rem 2rem;*/
+header {
+    /*element selector. Targets the <header> element*/
+    display: flex;
+    /*declaration:: property */
+    justify-content: space-between;
+    /* property: justify-content. Value: space-between.*/
+    align-items: center;
+    /* property: align-items. Value: center*/
+    padding: 1.5rem 2rem;
+    /*property:padding. Values: 1.5rem 2rem;*/
+    border-bottom: 1px solid #e0e0e0;
+    /* property:padding. Value: 1.5rem 2rem;*/
 }
 
-header h1{ /* DESCENDANT selector: <h1> inside <header>* Different from compound selector*/
-    font-size: 1.75rem;/*property: font-size. Value: 1.75 w/ unit (rem) */
+header h1 {
+    /* DESCENDANT selector: <h1> inside <header>* Different from compound selector*/
+    font-size: 1.75rem;
+    /*property: font-size. Value: 1.75 w/ unit (rem) */
 
-}/*closes declaration*/
-
-nav ul { /*a descendant selector that targets a <ul> element inside a <nav> element*/
-    display: flex; /*property: display. value: flex*/
-    gap: 1.5rem;/*property; gap. value: 1.5 and rem */
-    list-style: none; /*property: list-style*/
-    margin: 0;/*property: margin. value: 0*/
-    padding: 0;/*property: padding. value:0*/
 }
 
-nav a {/* a descendant selector that targets a <a> element inside a <nav> element*/
-    text-decoration: none; /*property: text-declaration. value: none*/
-    color: #1a1a1a;/*property: color. value: #1a1a1a (hex color)*/
-    font-weight: 500;/*property: font-weight. value: 500 (on a scale of 100–900, 400 is normal, 700 is bold, 500 is medium)*/
-    font-size: 0.95rem; /*property: color. value: 0.95rem. (1rem is default)*/
+/*closes declaration*/
+
+nav ul {
+    /*a descendant selector that targets a <ul> element inside a <nav> element*/
+    display: flex;
+    /*property: display. value: flex*/
+    gap: 1.5rem;
+    /*property; gap. value: 1.5 and rem */
+    list-style: none;
+    /*property: list-style*/
+    margin: 0;
+    /*property: margin. value: 0*/
+    padding: 0;
+    /*property: padding. value:0*/
 }
 
-nav a:hover { /*a descendant selector combined with a pseudo-class selector. :hover part is a pseudo-class.*/
-    color: #8a8a8a;/*property:color. value:#8a8a8a*/
+nav a {
+    /* a descendant selector that targets a <a> element inside a <nav> element*/
+    text-decoration: none;
+    /*property: text-declaration. value: none*/
+    color: #1a1a1a;
+    /*property: color. value: #1a1a1a (hex color)*/
+    font-weight: 500;
+    /*property: font-weight. value: 500 (on a scale of 100–900, 400 is normal, 700 is bold, 500 is medium)*/
+    font-size: 0.95rem;
+    /*property: color. value: 0.95rem. (1rem is default)*/
 }
 
-main { /*selector. targets the <main> element*/
-    padding: 2rem;/*property: padding. value: 2rem. applies the same padding on all 4 sides*/
-    max-width: 1200px;/*property: max-width. value: 1200px. caps the elements width. can never be wider than this*/
-    margin: 0 auto;/*using shorthand w/ 2 values. property: margin. value: 0 auto (top/bottom 0, left/right auto. keyword value: auto;It's not a number or a unit, it's a special word the browser interprets based on context. */
+nav a:hover {
+    /*a descendant selector combined with a pseudo-class selector. :hover part is a pseudo-class.*/
+    color: #8a8a8a;
+    /*property:color. value:#8a8a8a*/
+}
+
+main {
+    /*selector. targets the <main> element*/
+    padding: 2rem;
+    /*property: padding. value: 2rem. applies the same padding on all 4 sides*/
+    max-width: 1200px;
+    /*property: max-width. value: 1200px. caps the elements width. can never be wider than this*/
+    margin: 0 auto;
+    /*using shorthand w/ 2 values. property: margin. value: 0 auto (top/bottom 0, left/right auto. keyword value: auto;It's not a number or a unit, it's a special word the browser interprets based on context. */
 }
 
 
@@ -63,22 +98,34 @@ Important Concepts-
 
 
 
-form {  /* the selector (element selector; targets the <form> element*/
-    display: flex; /*declaration. property:display. Value:flex*/
-    gap: 0.5rem;/*declaration. Property: gap. Value 035rem (number w/ unit;space between flex children*/ 
-    margin-bottom: 2rem;/*declaration. Property:margin-bottom (a longhand; contols wone side only.) Value 0.5rem*/
+form {
+    /* the selector (element selector; targets the <form> element*/
+    display: flex;
+    /*declaration. property:display. Value:flex*/
+    gap: 0.5rem;
+    /*declaration. Property: gap. Value 035rem (number w/ unit;space between flex children*/
+    margin-bottom: 2rem;
+    /*declaration. Property:margin-bottom (a longhand; contols wone side only.) Value 0.5rem*/
 }
 
-input[type="search"] {/*attribute selector. Uses square brackets to match an element by an attribute and it's value*/
-    flex: 1; /*declaration. Property: f;ex. Value: 1*/
-    padding: 0.75rem 1rem;/*declaration using shorthand and 2 values. Property: padding. Value: 0.75rem 1rem (top/bottom 0.75rem, left/right 1rem) */
-    font-size: 1rem;/*property: font-sizw. Value: 1rem*/
-    font-family: inherit;/*property: font-family. Value: inherit*/
-    border: 1px solid #ccc;/*Declaration using shorthand.property: border. Value: 1px solid #ccc (three parts) */
-    border-radius: 4px;/*declaration. Property: border-radius. Value 4px (rounds corners)*/
+input[type="search"] {
+    /*attribute selector. Uses square brackets to match an element by an attribute and it's value*/
+    flex: 1;
+    /*declaration. Property: f;ex. Value: 1*/
+    padding: 0.75rem 1rem;
+    /*declaration using shorthand and 2 values. Property: padding. Value: 0.75rem 1rem (top/bottom 0.75rem, left/right 1rem) */
+    font-size: 1rem;
+    /*property: font-sizw. Value: 1rem*/
+    font-family: inherit;
+    /*property: font-family. Value: inherit*/
+    border: 1px solid #ccc;
+    /*Declaration using shorthand.property: border. Value: 1px solid #ccc (three parts) */
+    border-radius: 4px;
+    /*declaration. Property: border-radius. Value 4px (rounds corners)*/
 }
 
-button { /*selector. (element selector;targets the <button> element*/
+button {
+    /*selector. (element selector;targets the <button> element*/
     padding: 0.75rem 2rem;
     font-size: 1rem;
     font-family: inherit;
@@ -88,10 +135,12 @@ button { /*selector. (element selector;targets the <button> element*/
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;/*declaration using shoerthand. property:transition. Value: background-color 0.0s ease. (three parts: property to animate background-color, duration 0.3, timing function ease)*/
+    transition: background-color 0.3s ease;
+    /*declaration using shoerthand. property:transition. Value: background-color 0.0s ease. (three parts: property to animate background-color, duration 0.3, timing function ease)*/
 }
 
-button:hover { /*selector w/ a pseudo-class. :hppver is a state selector. Applies only when the mouse is over the element*/
+button:hover {
+    /*selector w/ a pseudo-class. :hppver is a state selector. Applies only when the mouse is over the element*/
     background-color: #8a8a8a;
 }
 
@@ -99,12 +148,11 @@ form {
     display: flex;
     gap: 0.5rem;
     margin-bottom: 2rem
-
 }
 
 input[type="search"] {
     flex: 1;
-    padding:0.75rem 1rem;
+    padding: 0.75rem 1rem;
     font-size: 1rem;
     font-family: inherit;
     border: 1px solid #ccc;
@@ -122,7 +170,8 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;/*declaration using shoerthand. property:transition. Value: background-color 0.0s ease. (three parts: property to animate background-color, duration 0.3, timing function ease)*/
+    transition: background-color 0.3s ease;
+    /*declaration using shoerthand. property:transition. Value: background-color 0.0s ease. (three parts: property to animate background-color, duration 0.3, timing function ease)*/
 }
 
 
@@ -133,17 +182,21 @@ button:hover {
 
 /*SECTION 7*/
 
-@media (max-width: 320px) { /*an at-rule. At-rules start w/ @ and control when or how other rules apply.Ex: @import, @font-face, @keyframes, @supports. */
-                            /*Media feature max-width-means "at or below this width".The opposite is min-width ("at or above this width").*/   
-                            /* Cascade inside @media- the rukes inside the media query override the same selectors defined earlier in the file. So header {flex-direction:column;} inside the media query overrides header { display: flex;...} at the top of the file-but only when the viewport is ≤ 320px */
+@media (max-width: 320px) {
+
+    /*an at-rule. At-rules start w/ @ and control when or how other rules apply.Ex: @import, @font-face, @keyframes, @supports. */
+    /*Media feature max-width-means "at or below this width".The opposite is min-width ("at or above this width").*/
+    /* Cascade inside @media- the rukes inside the media query override the same selectors defined earlier in the file. So header {flex-direction:column;} inside the media query overrides header { display: flex;...} at the top of the file-but only when the viewport is ≤ 320px */
     header {
-        flex-direction: column; /*declaration. Property:flex-direction. Value: column (keyword-changes flex children from side-by-side to stacked vertically). Default is row.*/
+        flex-direction: column;
+        /*declaration. Property:flex-direction. Value: column (keyword-changes flex children from side-by-side to stacked vertically). Default is row.*/
         align-items: flex-start;
         gap: 0.5rem;
     }
 
     nav ul {
-        flex-direction: column; /*reverses the flex layout. instead of children sitting side-by-side (default row), they stack vertically.  This is how the mobile requirements work:
+        flex-direction: column;
+        /*reverses the flex layout. instead of children sitting side-by-side (default row), they stack vertically.  This is how the mobile requirements work:
     1. Header: title above nav
     2. Nav: links stacked
     3. Forn: input above button
@@ -155,19 +208,27 @@ button:hover {
         flex-direction: column;
     }
 
-   #results .artwork {
-    width: calc(25% - 0.75rem);
-    height: 250px;
-    object-fit: cover;
-    border-radius: 4px;
-}
+    #results .artwork {
+        width: calc(25% - 0.75rem);
+        height: 250px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
 
-    footer { /*adds footer w/ API attrubution*/ 
-    text-align: left;
-    padding: 2rem;
-    font-size: 0.85rem;
-    color: #8a8a8a;
-}
+    footer {
+        /*adds footer w/ API attrubution*/
+        text-align: left;
+        padding: 2rem;
+        font-size: 0.85rem;
+        color: #8a8a8a;
+    }
+
+
+    .no-results { /* adds no results msg.*/
+        text-align: center;
+        color: #8a8a8a;
+        padding: 2rem;
+    }
 
     /*REQUIREMENTS THAT ARE MET
     1. header {....} req 11 (title and nav stack)

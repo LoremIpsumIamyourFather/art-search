@@ -30,7 +30,6 @@ async function searchArtworks(query) {//query is a permameter. The search term t
 
 }                                          
 
-}
 
 const form = document.getElementById('search-form');//get the form element by its ID
 const input = document.getElementById('search-input');
