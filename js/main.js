@@ -20,7 +20,15 @@ async function searchArtworks(query) {//query is a permameter. The search term t
         img.classList.add('artwork');
         resultsContainer.appendChild(img);
 
+
     });
+
+    // 4. Show message if nothing cames back
+    if (data.data.length === 0) {
+        resultsContainer.innerHTML = '<p class="no-results">No artworks found. Try another search.</p>';
+    }
+
+}                                          
 
 }
 
