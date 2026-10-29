@@ -7,7 +7,7 @@
 Aimee's Art Search is a single-page web application that lets users search the Art Institute of Chicago's public collection of over 100,000 artworks. Enter a keyword, and matching artworks appear in a responsive grid.
 
 ## Live Site
-(coming soon — will be deployed to GitHub Pages)
+https://loremipsumiamyourfather.github.io/art-search/
 
 ## How to Use
 
